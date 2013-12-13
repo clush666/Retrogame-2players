@@ -84,10 +84,10 @@ struct {
 	int key;
 } io[] = {
 //	  Input    Output (from /usr/include/linux/input.h)
-	{ 18,      KEY_UP	     },
-	{  2,      KEY_DOWN    },
-	{  3,      KEY_RIGHT       },
-	{  4,      KEY_LEFT     },
+	{ 18,      KEY_UP},
+	{  4,      KEY_DOWN},
+	{  3,      KEY_RIGHT},
+	{  2,      KEY_LEFT},
 	{ 17,      KEY_A },
 	{ 28,      KEY_S },
 	{ 29,      KEY_D },
@@ -109,7 +109,7 @@ struct {
 	{  5,      KEY_I },
 	{  1,      KEY_O },
 	{  0,      KEY_P  }
-	
+
 /*	{ 25,      KEY_LEFT     },
 	{  9,      KEY_RIGHT    },
 	{ 10,      KEY_UP       },
@@ -169,6 +169,7 @@ void err(char *msg) {
 	cleanup();
 	exit(-1);
 }
+
 // Interrupt handler -- set global flag to abort main loop.
 void signalHandler(int n) {
 	running = 0;
@@ -233,25 +234,27 @@ int main(int argc, char *argv[]) {
 	  GPIO_BASE );          // Offset to GPIO registers
 	close(fd);              // Not needed after mmap()
 	if(gpio == MAP_FAILED) err("Can't mmap()");
-	
-	// Set pin 0, 1 and 5 as GPIO (alt0)
+
+	// Set pin 0, 1, 2, 3, 4, 5, 7 and 9 as GPIO (alt0)
 	bitmask=gpio[GPFSEL0];
-	bitmask=bitmask & 0xFFFC7FC0;
-	gpio[GPFSEL1]=bitmask;
-	//for(shortWait=150;--shortWait;);  //don't know if necessary
-	
-	// Set pin 14 and 15 as GPIO (alt0)
+	bitmask=bitmask & 0xC01C0000; //0b1100 0000 0001 1100 0000 0000 0000 0000
+	gpio[GPFSEL0]=bitmask;
+
+	// Set pin 10, 11, 14, 15,17 and 18 as GPIO (alt0)
 	bitmask=gpio[GPFSEL1];
-	bitmask=bitmask & 0xFFFC0FFF; //0b1111 1111 1111 1100 0000 1111 1111 1111
+	bitmask=bitmask & 0xF81C0FC; //0b1111 1000 0001 1100 0000 1111 1100 0000
 	gpio[GPFSEL1]=bitmask;
-	//for(shortWait=150;--shortWait;);  //don't know if necessary
-	
-	// Set pin 21 as GPIO (alt0)
+
+	// Set pin 21, 22, 23, 24, 25, 27, 28 and 29 as GPIO (alt0)
 	bitmask=gpio[GPFSEL2];
-	bitmask=bitmask & 0xFFFFFF7C ;
-	gpio[GPFSEL1]=bitmask;
-	//for(shortWait=150;--shortWait;);  //don't know if necessary
-	
+	bitmask=bitmask & 0xC01C0007; //0b1100 0000 0001 1100 0000 0000 0000 0111
+	gpio[GPFSEL2]=bitmask;
+
+	// Set pin 30 and 31 as GPIO (alt0)
+	bitmask=gpio[GPFSEL3];
+	bitmask=bitmask & 0xFFFFFFC0; //0b1111 1111 1111 1111 1111 1111 1100 0000
+	gpio[GPFSEL3]=bitmask;
+
  	// Make combined bitmap of pullup-enabled pins:
 	for(bitmask=i=0; i<IOLEN; i++)
 		if(io[i].key != GND) bitmask |= (1 << io[i].pin);
@@ -377,8 +380,15 @@ int main(int argc, char *argv[]) {
 						extstate[j] = intstate[j];
 						keyEv.code  = io[i].key;
 						keyEv.value = intstate[j];
-						write(fd, &keyEv,
-						  sizeof(keyEv));
+						if (keyEv.value==15)
+							{
+							system("sudo halt");
+							}
+						else
+							{
+							write(fd, &keyEv,
+							sizeof(keyEv));
+							}
 						c = 1; // Follow w/SYN event
 					}
 					j++;
