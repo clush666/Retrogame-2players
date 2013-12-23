@@ -244,13 +244,13 @@ int main(int argc, char *argv[]) {
 	bitmask=gpio[GPFSEL1];
 	bitmask=bitmask & 0xFFFC0FFF; //0b1111 1111 1111 1100 0000 1111 1111 1111
 	gpio[GPFSEL1]=bitmask;
-	//for(shortWait=150;--shortWait;);  //don't vknow if necessary
+	//for(shortWait=150;--shortWait;);  //don't know if necessary
 	
 	// Set pin 21 as GPIO (alt0)
 	bitmask=gpio[GPFSEL2];
 	bitmask=bitmask & 0xFFFFFF7C ;
 	gpio[GPFSEL1]=bitmask;
-	//for(shortWait=150;--shortWait;);  //don't vknow if necessary
+	//for(shortWait=150;--shortWait;);  //don't know if necessary
 	
  	// Make combined bitmap of pullup-enabled pins:
 	for(bitmask=i=0; i<IOLEN; i++)
