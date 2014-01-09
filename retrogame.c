@@ -84,6 +84,7 @@ struct {
 	int key;
 } io[] = {
 //	  Input    Output (from /usr/include/linux/input.h)
+//	Modify the following to adapt to your keyboard shortcuts
 	{ 18,      KEY_UP},
 	{  4,      KEY_DOWN},
 	{  3,      KEY_RIGHT},
