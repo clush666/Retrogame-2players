@@ -1,37 +1,8 @@
-update=09/01/2014 13:44:25
+update=20/01/2014 12:24:46
 version=1
-last_client=cvpcb
+last_client=pcbnew
 [general]
 version=1
-[pcbnew]
-version=1
-PadDrlX=320
-PadDimH=600
-PadDimV=600
-BoardThickness=630
-TxtPcbV=800
-TxtPcbH=600
-TxtModV=600
-TxtModH=600
-TxtModW=120
-VEgarde=100
-DrawLar=150
-EdgeLar=150
-TxtLar=120
-MSegLar=150
-LastNetListRead=carte raspi.net
-[pcbnew/libraries]
-LibName1=sockets
-LibName2=discret
-LibName3=pin_array
-LibName4=libcms
-LibName5=display
-LibName6=dip_sockets
-LibName7=module perso
-LibName8=connecteurs
-LibName9=connect
-LibName10=connect2
-LibDir=../libCompoPerso;../libCompoPerso/compoDuNet
 [eeschema]
 version=1
 LibDir=../libCompoPerso;../libCompoPerso/compoDuNet
@@ -94,3 +65,32 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[pcbnew]
+version=1
+PadDrlX=320
+PadDimH=600
+PadDimV=600
+BoardThickness=630
+TxtPcbV=800
+TxtPcbH=600
+TxtModV=600
+TxtModH=600
+TxtModW=120
+VEgarde=100
+DrawLar=150
+EdgeLar=150
+TxtLar=120
+MSegLar=150
+LastNetListRead=carte raspi.net
+[pcbnew/libraries]
+LibDir=../libCompoPerso
+LibName1=sockets
+LibName2=discret
+LibName3=pin_array
+LibName4=libcms
+LibName5=display
+LibName6=dip_sockets
+LibName7=module perso
+LibName8=connecteurs
+LibName9=connect
+LibName10=connect2

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 09/01/2014 14:22:43
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 20/01/2014 12:24:05
 
 BeginCmp
 TimeStamp = /52AAC6FC;
@@ -120,10 +120,10 @@ IdModule  = SIL-2;
 EndCmp
 
 BeginCmp
-TimeStamp = /52CEA260;
+TimeStamp = /52DD063D;
 Reference = P18;
-ValeurCmp = CONN_4;
-IdModule  = SIL-4;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
 EndCmp
 
 BeginCmp

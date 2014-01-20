@@ -1,256 +1,149 @@
-# EESchema Netlist Version 1.1 created  09/01/2014 14:42:45
+# EESchema Netlist Version 1.1 created  20/01/2014 12:24:05
 (
- ( /52CEA260 $noname  P18 CONN_4 {Lib=CONN_4}
-  (    1 /GPIO0 )
-  (    2 /GPIO1 )
-  (    3 /GPIO5 )
-  (    4 /GPIO21 )
+ ( /52AAC6FC SIL-2 P1 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO17 )
  )
- ( /52CE948A $noname  P_P2 CONN_2 {Lib=CONN_2}
-  (    1 N-000047 )
-  (    2 N-000033 )
+ ( /52AAC703 SIL-2 P2 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO28 )
  )
- ( /52AACC41 $noname  P10 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO15 )
+ ( /52AAC709 SIL-2 P3 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO30 )
  )
- ( /52AACC3F $noname  P9 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO14 )
+ ( /52AAC70A SIL-2 P4 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO31 )
  )
- ( /52AAC724 $noname  P12 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO25 )
+ ( /52AAC70B SIL-2 P5 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO29 )
  )
- ( /52AAC731 $noname  P17 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO10 )
+ ( /52AAC70C SIL-2 P6 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO27 )
  )
- ( /52AAC72E $noname  P16 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO9 )
+ ( /52AAC711 SIL-2 P7 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO22 )
  )
- ( /52AAC72A $noname  P15 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO11 )
+ ( /52AAC712 SIL-2 P8 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO23 )
  )
- ( /52AAC728 $noname  P14 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO7 )
+ ( /52AACC3F SIL-2 P9 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO14 )
  )
- ( /52AAC726 $noname  P13 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO8 )
+ ( /52AACC41 SIL-2 P10 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO15 )
  )
- ( /52AAC721 $noname  P11 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO24 )
+ ( /52AAC721 SIL-2 P11 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO24 )
  )
- ( /52AAC712 $noname  P8 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO23 )
+ ( /52AAC724 SIL-2 P12 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO25 )
  )
- ( /52AAC711 $noname  P7 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO22 )
+ ( /52AAC726 SIL-2 P13 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO8 )
  )
- ( /52AAC70C $noname  P6 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO27 )
+ ( /52AAC728 SIL-2 P14 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO7 )
  )
- ( /52AAC70B $noname  P5 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO29 )
+ ( /52AAC72A SIL-2 P15 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO11 )
  )
- ( /52AAC70A $noname  P4 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO31 )
+ ( /52AAC72E SIL-2 P16 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO9 )
  )
- ( /52AAC709 $noname  P3 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO30 )
+ ( /52AAC731 SIL-2 P17 CONN_2
+  ( 1 GND )
+  ( 2 /GPIO10 )
  )
- ( /52AAC703 $noname  P2 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO28 )
+ ( /52DD063D SIL-5 P18 CONN_5
+  ( 1 /GPIO0 )
+  ( 2 /GPIO1 )
+  ( 3 /GPIO5 )
+  ( 4 /GPIO21 )
+  ( 5 GND )
  )
- ( /52AAC6FC $noname  P1 CONN_2 {Lib=CONN_2}
-  (    1 GND )
-  (    2 /GPIO17 )
+ ( /52A9D5ED SIL-5 P_JOY1 CONN_5
+  ( 1 /GPIO18 )
+  ( 2 /GPIO2 )
+  ( 3 /GPIO3 )
+  ( 4 /GPIO4 )
+  ( 5 GND )
  )
- ( /52A9D5ED $noname  P_JOY1 CONN_5 {Lib=CONN_5}
-  (    1 /GPIO18 )
-  (    2 /GPIO2 )
-  (    3 /GPIO3 )
-  (    4 /GPIO4 )
-  (    5 GND )
+ ( /52A9C539 pin_array_13x2 P_P1 CONN_13X2
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 /GPIO2 )
+  ( 4 ? )
+  ( 5 /GPIO3 )
+  ( 6 ? )
+  ( 7 /GPIO4 )
+  ( 8 /GPIO14 )
+  ( 9 ? )
+  ( 10 /GPIO15 )
+  ( 11 /GPIO17 )
+  ( 12 /GPIO18 )
+  ( 13 /GPIO27 )
+  ( 14 GND )
+  ( 15 /GPIO22 )
+  ( 16 /GPIO23 )
+  ( 17 ? )
+  ( 18 /GPIO24 )
+  ( 19 /GPIO10 )
+  ( 20 GND )
+  ( 21 /GPIO9 )
+  ( 22 /GPIO25 )
+  ( 23 /GPIO11 )
+  ( 24 /GPIO8 )
+  ( 25 ? )
+  ( 26 /GPIO7 )
  )
- ( /52A9C472 $noname  P_S5 CONN_15 {Lib=CONN_15}
-  (    1 ? )
-  (    2 ? )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 ? )
-  (    8 ? )
-  (    9 ? )
-  (   10 GND )
-  (   11 /GPIO21 )
-  (   12 /GPIO5 )
-  (   13 /GPIO1 )
-  (   14 /GPIO0 )
-  (   15 ? )
+ ( /52CE948A SIL-2 P_P2 CONN_2
+  ( 1 N-000033 )
+  ( 2 N-000046 )
  )
- ( /52A9C539 $noname  P_P1 CONN_13X2 {Lib=CONN_13X2}
-  (    1 ? )
-  (    2 ? )
-  (    3 /GPIO2 )
-  (    4 ? )
-  (    5 /GPIO3 )
-  (    6 ? )
-  (    7 /GPIO4 )
-  (    8 /GPIO14 )
-  (    9 ? )
-  (   10 /GPIO15 )
-  (   11 /GPIO17 )
-  (   12 /GPIO18 )
-  (   13 /GPIO27 )
-  (   14 GND )
-  (   15 /GPIO22 )
-  (   16 /GPIO23 )
-  (   17 ? )
-  (   18 /GPIO24 )
-  (   19 /GPIO10 )
-  (   20 GND )
-  (   21 /GPIO9 )
-  (   22 /GPIO25 )
-  (   23 /GPIO11 )
-  (   24 /GPIO8 )
-  (   25 ? )
-  (   26 /GPIO7 )
+ ( /52A9C51E pin_array_4x2 P_P5 CONN_4X2
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 /GPIO28 )
+  ( 4 /GPIO31 )
+  ( 5 /GPIO30 )
+  ( 6 /GPIO29 )
+  ( 7 GND )
+  ( 8 GND )
  )
- ( /52A9C51E $noname  P_P5 CONN_4X2 {Lib=CONN_4X2}
-  (    1 ? )
-  (    2 ? )
-  (    3 /GPIO28 )
-  (    4 /GPIO31 )
-  (    5 /GPIO30 )
-  (    6 /GPIO29 )
-  (    7 GND )
-  (    8 GND )
+ ( /52A9C504 SIL-2 P_P6 CONN_2
+  ( 1 N-000033 )
+  ( 2 N-000046 )
  )
- ( /52A9C504 $noname  P_P6 CONN_2 {Lib=CONN_2}
-  (    1 N-000047 )
-  (    2 N-000033 )
+ ( /52A9C472 CONN15_SMD P_S5 CONN_15
+  ( 1 ? )
+  ( 2 ? )
+  ( 3 ? )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 GND )
+  ( 11 /GPIO21 )
+  ( 12 /GPIO5 )
+  ( 13 /GPIO1 )
+  ( 14 /GPIO0 )
+  ( 15 ? )
  )
 )
 *
-{ Pin List by Nets
-Net 1 "/GPIO2" "GPIO2"
- P_P1 3
- P_JOY1 2
-Net 2 "GND" "GND"
- P6 1
- P5 1
- P4 1
- P3 1
- P7 1
- P8 1
- P_P5 8
- P_P5 7
- P14 1
- P12 1
- P_P1 14
- P10 1
- P9 1
- P_P1 20
- P13 1
- P11 1
- P2 1
- P1 1
- P_JOY1 5
- P17 1
- P16 1
- P15 1
- P_S5 10
-Net 3 "/GPIO17" "GPIO17"
- P_P1 11
- P1 2
-Net 9 "/GPIO30" "GPIO30"
- P3 2
- P_P5 5
-Net 15 "/GPIO11" "GPIO11"
- P15 2
- P_P1 23
-Net 16 "/GPIO10" "GPIO10"
- P_P1 19
- P17 2
-Net 25 "/GPIO29" "GPIO29"
- P_P5 6
- P5 2
-Net 26 "/GPIO8" "GPIO8"
- P_P1 24
- P13 2
-Net 27 "/GPIO27" "GPIO27"
- P_P1 13
- P6 2
-Net 28 "/GPIO9" "GPIO9"
- P_P1 21
- P16 2
-Net 29 "/GPIO14" "GPIO14"
- P_P1 8
- P9 2
-Net 30 "/GPIO4" "GPIO4"
- P_JOY1 4
- P_P1 7
-Net 32 "/GPIO3" "GPIO3"
- P_P1 5
- P_JOY1 3
-Net 33 "" ""
- P_P2 2
- P_P6 2
-Net 34 "/GPIO31" "GPIO31"
- P_P5 4
- P4 2
-Net 35 "/GPIO28" "GPIO28"
- P_P5 3
- P2 2
-Net 36 "/GPIO0" "GPIO0"
- P18 1
- P_S5 14
-Net 37 "/GPIO5" "GPIO5"
- P_S5 12
- P18 3
-Net 38 "/GPIO18" "GPIO18"
- P_P1 12
- P_JOY1 1
-Net 39 "/GPIO22" "GPIO22"
- P7 2
- P_P1 15
-Net 40 "/GPIO7" "GPIO7"
- P14 2
- P_P1 26
-Net 41 "/GPIO21" "GPIO21"
- P18 4
- P_S5 11
-Net 42 "/GPIO1" "GPIO1"
- P18 2
- P_S5 13
-Net 43 "/GPIO23" "GPIO23"
- P8 2
- P_P1 16
-Net 44 "/GPIO24" "GPIO24"
- P11 2
- P_P1 18
-Net 45 "/GPIO25" "GPIO25"
- P_P1 22
- P12 2
-Net 46 "/GPIO15" "GPIO15"
- P10 2
- P_P1 10
-Net 47 "" ""
- P_P6 1
- P_P2 1
-}
-#End
